@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "babo = baka",
@@ -23,6 +24,11 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Script
+          src="https://app.rybbit.io/api/script.js"
+          data-site-id="process.env.NEXT_PUBLIC_RYBBIT_ID"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
