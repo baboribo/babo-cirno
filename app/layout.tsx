@@ -27,7 +27,7 @@ export default function RootLayout({
         </ThemeProvider>
         <Script
           src="https://app.rybbit.io/api/script.js"
-          data-site-id="process.env.NEXT_PUBLIC_RYBBIT_ID"
+          data-site-id="00b188e1629d"
           strategy="afterInteractive"
         />
         <SpeedInsights />
