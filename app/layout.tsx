@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "babo = baka",
@@ -29,6 +30,7 @@ export default function RootLayout({
           data-site-id="process.env.NEXT_PUBLIC_RYBBIT_ID"
           strategy="afterInteractive"
         />
+        <SpeedInsights />
       </body>
     </html>
   );
